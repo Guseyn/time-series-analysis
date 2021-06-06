@@ -1,0 +1,56 @@
+VAR Estimation Results:
+========================= 
+Endogenous variables: y4, y10 
+Deterministic variables: const 
+Sample size: 299 
+Log Likelihood: -435.37 
+Roots of the characteristic polynomial:
+1.001 0.0585
+Call:
+VAR(y = v3, p = 1, type = "const", exogen = NULL)
+
+
+Estimation results for equation y4: 
+=================================== 
+y4 = y4.l1 + y10.l1 + const 
+
+        Estimate Std. Error t value Pr(>|t|)    
+y4.l1    -1.7287     0.6897  -2.507   0.0127 *  
+y10.l1    4.3677     1.1036   3.958 9.49e-05 ***
+const  -253.0296    63.8943  -3.960 9.39e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 2.199 on 296 degrees of freedom
+Multiple R-Squared: 0.9955, Adjusted R-squared: 0.9955 
+F-statistic: 3.282e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation y10: 
+==================================== 
+y10 = y4.l1 + y10.l1 + const 
+
+       Estimate Std. Error t value Pr(>|t|)    
+y4.l1   -1.0437     0.4345  -2.402  0.01692 *  
+y10.l1   2.6707     0.6953   3.841  0.00015 ***
+const  -96.8322    40.2540  -2.406  0.01676 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 1.385 on 296 degrees of freedom
+Multiple R-Squared: 0.9954, Adjusted R-squared: 0.9954 
+F-statistic: 3.229e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+
+Covariance matrix of residuals:
+       y4   y10
+y4  4.834 3.035
+y10 3.035 1.919
+
+Correlation matrix of residuals:
+        y4    y10
+y4  1.0000 0.9965
+y10 0.9965 1.0000

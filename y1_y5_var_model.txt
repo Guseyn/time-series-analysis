@@ -1,0 +1,52 @@
+VAR Estimation Results:
+========================= 
+Endogenous variables: y1, y5 
+Deterministic variables: const 
+Sample size: 299 
+Log Likelihood: -336.735 
+Roots of the characteristic polynomial:
+1.006 0.01852
+Call:
+VAR(y = v1, p = 1, type = "const", exogen = NULL)
+
+
+Estimation results for equation y1: 
+=================================== 
+y1 = y1.l1 + y5.l1 + const 
+
+      Estimate Std. Error t value Pr(>|t|)
+y1.l1  -0.1589     2.4242  -0.066    0.948
+y5.l1   0.5827     1.2120   0.481    0.631
+const  78.4369   164.8674   0.476    0.635
+
+
+Residual standard error: 1.953 on 296 degrees of freedom
+Multiple R-Squared: 0.988,    Adjusted R-squared: 0.9879 
+F-statistic: 1.216e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation y5: 
+=================================== 
+y5 = y1.l1 + y5.l1 + const 
+
+      Estimate Std. Error t value Pr(>|t|)
+y1.l1  -0.2807     4.8496  -0.058    0.954
+y5.l1   1.1468     2.4246   0.473    0.637
+const  18.3431   329.8205   0.056    0.956
+
+
+Residual standard error: 3.907 on 296 degrees of freedom
+Multiple R-Squared: 0.988,    Adjusted R-squared: 0.9879 
+F-statistic: 1.215e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+
+Covariance matrix of residuals:
+      y1     y5
+y1 3.814  7.627
+y5 7.627 15.262
+
+Correlation matrix of residuals:
+       y1     y5
+y1 1.0000 0.9997
+y5 0.9997 1.0000

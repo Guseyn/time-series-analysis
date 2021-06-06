@@ -1,4 +1,5 @@
-data <- read.csv('data.csv', header = TRUE, stringsAsFactors = FALSE)
+# read csv file
+data <- read.csv('data.csv', header = TRUE)
 xLength <- length(data$date)
 xPointsForDates <- 1:xLength
 
@@ -10,8 +11,8 @@ for (i in 1:10) {
     # Create a plot
     plot(x = xPointsForDates, y = data[[sprintf('y%d', i)]],
          pch = 16, frame = FALSE,
-         xlab = 'dates', ylab = c('y', i), col = '#2E9FDF')
-    points(x = xPointsForDates, y = data[[sprintf('y%d', j)]], col = '#Df2E7E', pch = 19)
+         xlab = 'dates', ylab = 'y', col = '#2E9FDF')
+    points(x = xPointsForDates, y = data[[sprintf('y%d', j)]], col = '#Df2E7E', pch = 16)
     # Close the pdf file
     dev.off() 
     # Print that PDF is generated

@@ -1,0 +1,56 @@
+VAR Estimation Results:
+========================= 
+Endogenous variables: y1, y6 
+Deterministic variables: const 
+Sample size: 299 
+Log Likelihood: -959.019 
+Roots of the characteristic polynomial:
+0.9979 0.9979
+Call:
+VAR(y = v1, p = 1, type = "const", exogen = NULL)
+
+
+Estimation results for equation y1: 
+=================================== 
+y1 = y1.l1 + y6.l1 + const 
+
+       Estimate Std. Error t value Pr(>|t|)    
+y1.l1  1.002558   0.006373 157.317  < 2e-16 ***
+y6.l1 -0.060207   0.015216  -3.957 9.51e-05 ***
+const 10.202893   2.956062   3.452 0.000639 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 1.904 on 296 degrees of freedom
+Multiple R-Squared: 0.9886, Adjusted R-squared: 0.9885 
+F-statistic: 1.28e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation y6: 
+=================================== 
+y6 = y1.l1 + y6.l1 + const 
+
+      Estimate Std. Error t value Pr(>|t|)    
+y1.l1 0.006168   0.002573   2.398   0.0171 *  
+y6.l1 0.992892   0.006143 161.639   <2e-16 ***
+const 0.289810   1.193365   0.243   0.8083    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.7686 on 296 degrees of freedom
+Multiple R-Squared: 0.989,  Adjusted R-squared: 0.9889 
+F-statistic: 1.334e+04 on 2 and 296 DF,  p-value: < 2.2e-16 
+
+
+
+Covariance matrix of residuals:
+        y1      y6
+y1 3.62479 0.06822
+y6 0.06822 0.59075
+
+Correlation matrix of residuals:
+        y1      y6
+y1 1.00000 0.04662
+y6 0.04662 1.00000
