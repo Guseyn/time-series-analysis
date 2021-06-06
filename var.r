@@ -60,7 +60,7 @@ summary(Model4)
 #### HERE WE BUILD VAR MODEL FOR COINTEGRATED TIME SERIES Y1 and Y5
 
 minX <- 1
-maxX <- 200
+maxX <- 290
 xPointsForDates <- minX:maxX
 l11 <- -0.066
 l12 <- 0.481
@@ -87,7 +87,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y1_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
+     xlab = '290 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y5_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
@@ -97,7 +97,7 @@ print(sprintf('PDF %s with charts for VAR Model (y1 and y5) is generated', pdfNa
 #### HERE WE BUILD VAR MODEL FOR COINTEGRATED TIME SERIES Y2 and Y3
 
 minX <- 1
-maxX <- 200
+maxX <- 290
 xPointsForDates <- minX:maxX
 l11 <- -0.313
 l12 <- 3.503
@@ -124,7 +124,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y2_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
+     xlab = '290 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y3_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
@@ -134,7 +134,7 @@ print(sprintf('PDF %s with charts for VAR Model (y2 and y3) is generated', pdfNa
 #### LET'S COMPARE WITH NOT COINTEGRATED Y1 and Y6
 
 minX <- 1
-maxX <- 200
+maxX <- 290
 xPointsForDates <- minX:maxX
 l11 <- 157.317
 l12 <- -3.957
@@ -163,7 +163,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y1_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
+     xlab = '290 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y6_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
