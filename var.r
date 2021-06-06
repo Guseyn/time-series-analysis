@@ -87,7 +87,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y1_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = 'dates', ylab = 'y', col = '#2E9FDF')
+     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y5_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
@@ -124,7 +124,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y2_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = 'dates', ylab = 'y', col = '#2E9FDF')
+     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y3_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
@@ -163,7 +163,7 @@ pdf(pdfName)
 plot(x = xPointsForDates, y = y1_var,
      type='l',
      pch = 16, frame = FALSE,
-     xlab = 'dates', ylab = 'y', col = '#2E9FDF')
+     xlab = '200 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
 lines(x = xPointsForDates, y = y6_var, col = '#Df2E7E', pch = 16)
 # Close the pdf file
 dev.off() 
