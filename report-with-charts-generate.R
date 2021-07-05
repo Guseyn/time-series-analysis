@@ -5,4 +5,4 @@
 # in terminal: export RSTUDIO_PANDOC=/Applications/RStudio.app/Contents/MacOS/pandoc
 
 library(rmarkdown)
-rmarkdown::render("arima-markdown.Rmd", clean=TRUE, output_format="pdf_document")
+rmarkdown::render("report-with-charts.Rmd", clean=TRUE, output_format="pdf_document")
