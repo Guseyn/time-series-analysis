@@ -1,0 +1,5 @@
+## install.packages("rmarkdown", repos = "http://cran.us.r-project.org")
+## install.packages("tinytex", repos = "http://cran.us.r-project.org")
+## tinytex::install_tinytex()
+library(rmarkdown)
+rmarkdown::render("arima-markdown.Rmd", clean=TRUE, output_format="pdf_document")

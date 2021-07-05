@@ -1,0 +1,49 @@
+---
+title: "ARIMA MODEL CHARTS"
+output:
+  pdf_document: default
+params:
+  args: myarg
+---
+
+## Y1-Y10 Charts
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y1"), echo=FALSE}
+knitr::include_graphics("y1_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y2"), echo=FALSE}
+knitr::include_graphics("y2_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y3"), echo=FALSE}
+knitr::include_graphics("y3_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y4"), echo=FALSE}
+knitr::include_graphics("y4_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y5"), echo=FALSE}
+knitr::include_graphics("y5_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y6"), echo=FALSE}
+knitr::include_graphics("y6_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y7"), echo=FALSE}
+knitr::include_graphics("y7_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y8"), echo=FALSE}
+knitr::include_graphics("y8_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y9"), echo=FALSE}
+knitr::include_graphics("y9_arima.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y10"), echo=FALSE}
+knitr::include_graphics("y10_arima.pdf")
+```
