@@ -1,12 +1,23 @@
 ---
-title: "ARIMA MODEL CHARTS"
+title: "VAR AND ARIMA MODEL CHARTS"
 output:
   pdf_document: default
 params:
   args: myarg
 ---
 
-## Y1-Y10 Charts
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("Cointegrated Y1 and Y2"), echo=FALSE}
+knitr::include_graphics("y1_and_y5_var_model.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("Cointegrated Y1 and Y2"), echo=FALSE}
+knitr::include_graphics("y1_and_y5_var_model.pdf")
+```
+
+```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("Not Cointegrated Y1 and Y6"), echo=FALSE}
+knitr::include_graphics("y1_and_y6_var_model.pdf")
+```
 
 ```{r, out.width="0.8\\linewidth", include=TRUE, fig.align="center", fig.cap=c("ARIMA For y1"), echo=FALSE}
 knitr::include_graphics("y1_arima.pdf")
