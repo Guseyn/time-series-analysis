@@ -1,0 +1,27 @@
+{
+  "name": "time-series-analysis",
+  "version": "1.0.0",
+  "description": "Home Project In R",
+  "main": "markdown-pdf.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Guseyn/time-series-analysis.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Guseyn/time-series-analysis/issues"
+  },
+  "homepage": "https://github.com/Guseyn/time-series-analysis#readme",
+  "dependencies": {
+    "html-pdf-node": "^1.0.7",
+    "markdown-pdf": "^10.0.0",
+    "md-to-pdf": "^4.0.1",
+    "mdpdf": "^2.1.2",
+    "pretty-markdown-pdf": "^1.5.1",
+    "remarkable": "^2.0.1"
+  }
+}

@@ -19,3 +19,19 @@ for (i in 1:10) {
   # Print that PDF is generated
   print(sprintf('PDF %s for y%d arima is generated', pdfName, i))
 }
+
+for (i in 1:10) {
+  y <- data[[sprintf('y%d', i)]]
+  yTS <- ts(y, start = c(2020, 6), frequency=12)
+  fit <- auto.arima(yTS)
+  accuracy(fit)
+
+  pngName <- sprintf('y%d_arima.png', i)
+  # Open a pdf file
+  png(pngName)
+  plot(forecast(fit, 12), xlab = "Date", ylab = "Units", main = "ARIMA Forecast for Case-Shiller Index")
+  # Close the pdf file
+  dev.off() 
+  # Print that PDF is generated
+  print(sprintf('PNG %s for y%d arima is generated', pdfName, i))
+}

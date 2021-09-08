@@ -94,6 +94,21 @@ dev.off()
 # Print that PDF is generated
 print(sprintf('PDF %s with charts for VAR Model (y1 and y5) is generated', pdfName))
 
+
+pngName <- 'y1_and_y5_var_model.png'
+# Open a pdf file
+png(pngName)
+# Create a plot
+plot(x = xPointsForDates, y = y1_var,
+     type='l',
+     pch = 16, frame = FALSE,
+     xlab = '290 additional dates (after 300 previous ones)', ylab = 'y', col = '#2E9FDF')
+lines(x = xPointsForDates, y = y5_var, col = '#Df2E7E', pch = 16)
+# Close the pdf file
+dev.off() 
+# Print that PDF is generated
+print(sprintf('PNG %s with charts for VAR Model (y1 and y5) is generated', pdfName))
+
 #### HERE WE BUILD VAR MODEL FOR COINTEGRATED TIME SERIES Y2 and Y3
 
 minX <- 1
@@ -143,8 +158,6 @@ l21 <- 2.398
 l22 <- 161.639
 c2 <- 0.243
 
-y6 <- data$y6
-
 y1_var = c(y1[300])
 y6_var = c(y6[300])
 
@@ -169,3 +182,4 @@ lines(x = xPointsForDates, y = y6_var, col = '#Df2E7E', pch = 16)
 dev.off() 
 # Print that PDF is generated
 print(sprintf('PDF %s with charts for VAR Model (y1 and y6) is generated', pdfName))
+
