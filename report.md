@@ -60,7 +60,7 @@ y1 1.0000 0.9997
 y5 0.9997 1.0000
 ```
 
-<p style="font-size: 15px;">we can see that `y1` and `y5` correlate with coefficient `0.9997`, which is very close to `1`. That also proves that stock 1 and stock 5 are cointegrated.</p>
+<p style="font-size: 15px;">we can see that <b>y1</b> and <b>y5</b> correlate with coefficient <b>0.9997</b>, which is very close to <b>1</b>. That also proves that stock 1 and stock 5 are cointegrated.</p>
 
 <p style="font-size: 15px;">Also by VAR Estimation Results:</p>
 
