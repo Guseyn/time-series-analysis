@@ -28,7 +28,7 @@ stock 6 and stock 9.
 </p>
 
 
-And also we built chart for them in order to see the correlations between cointegrated pairs.
+<p style="font-size: 15px;">And also we built chart for them in order to see the correlations between cointegrated pairs.</p>
 
 #### 1. stock 1 and stock 5
 <img src="rplot_y1_and_y5.png" width="280px" style="display: block; margin: 0 auto;"/>
